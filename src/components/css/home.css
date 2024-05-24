@@ -1,0 +1,35 @@
+.wallpaper{
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    display: flex;
+
+  
+}
+.shop{
+    height: 50px;
+    width: 200px;
+    /* background-color: blue; */
+    margin-top: 500px;
+    margin-left: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shop button{
+    height: 40px;
+    width: 180px;
+    font-size: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    font-weight: 800;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    transition: transform .3s;
+    cursor: pointer;
+    
+}
+
+
