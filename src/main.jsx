@@ -11,7 +11,7 @@ import {createBrowserRouter,
   import About from './components/About.jsx';
   import Login from './components/Login.jsx';
   import Home from './components/Home.jsx';
-  import Cart from './components/Cart.jsx';
+  import Cart from './components/cart.jsx';
 
   const router = createBrowserRouter([
   
