@@ -1,47 +1,50 @@
-header{
-    height: 60px;
-    width: 100%;
-    /* background-color: black; */
-    border: 1px solid #7c7c7c;
-    border-radius: 5px;
+
+header {
+  
+    min-height: 70px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    overflow: hidden;
+    border: solid 2px #555;
+}
 
+header .logo a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
 }
-header .logo a{
-        text-decoration: none;
-        text-transform: uppercase;
-        color: black;
-}
-header nav{
+
+header nav {
     display: flex;
 }
+
 nav ul li {
     list-style: none;
     display: inline-block;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     color: #555;
     padding: 0 15px;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: lightseagreen;
 }
-nav .nav-cart{
-    cursor:pointer;
+
+nav .nav-cart {
+    cursor: pointer;
     position: relative;
-   bottom: -15px;
 }
-nav .nav-cart span{
-    position:absolute;
+
+nav .nav-cart span {
+    position: absolute;
     top: -12px;
     right: -7px;
-    background-color: crimson;
+    background: crimson;
     font-size: 10px;
     color: white;
     padding: 3px 5px;
@@ -49,3 +52,53 @@ nav .nav-cart span{
     z-index: -1;
 }
 
+header .menu,
+header .close {
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 750px) {
+    header ul {
+        position: fixed;
+        top: -2.3%;
+        left: -120%;
+        width: 100%;
+        height: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+        font-weight: 700;
+        color: black;
+        z-index: 40;
+        opacity: 0.97;
+        transition: 0.5s linear;
+    }
+
+    header .menu,
+    header .close {
+        display: block;
+    }
+
+    header .close {
+        position: absolute;
+        top: 10px;
+        right: 40px;
+    }
+
+    header ul.toggle {
+        left: 0;
+    }
+}
+
+/* Desktop view adjustment for cart icon */
+@media (min-width: 751px) {
+    nav .nav-cart {
+        top: 10px; /* Adjust this value to move the cart icon down */
+    }
+}
