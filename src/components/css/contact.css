@@ -1,0 +1,151 @@
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .contact-section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Footer Section */
+  .footer-separator {
+    margin: 40px 0;
+    border-top: 1px solid #ddd;
+  }
+  
+  .contact-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+  
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .footer-icon {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .footer-item h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .footer-item p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .footer-item {
+      width: 45%;
+    }
+  
+    .footer-icon {
+      font-size: 2rem;
+    }
+  
+    .footer-item h4 {
+      font-size: 1rem;
+    }
+  
+    .footer-item p {
+      font-size: 0.9rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    .contact-section h3 {
+      font-size: 1.3rem;
+    }
+  
+    .contact-section p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-item {
+      width: 100%;
+    }
+  
+    .contact-footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-icon {
+      font-size: 1.8rem;
+    }
+  
+    .footer-item h4 {
+      font-size: 0.9rem;
+    }
+  
+    .footer-item p {
+      font-size: 0.8rem;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    .contact-section h3 {
+      font-size: 1.2rem;
+    }
+  
+    .contact-section p {
+      font-size: 0.85rem;
+    }
+  }
+  
